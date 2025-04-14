@@ -31,7 +31,7 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-8">
-          <a href="#" className="hover:text-[#FFC107] transition-colors relative group">
+          <a href="#about" className="hover:text-[#FFC107] transition-colors relative group">
             About
             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#FFC107] transition-all duration-300 group-hover:w-full"></span>
           </a>
@@ -82,7 +82,7 @@ const Header = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-[#3E2723] px-4 py-4 border-t border-[#8D6E63]/60 relative z-10">
           <nav className="flex flex-col space-y-4">
-            <a href="#" className="hover:text-[#FFC107] transition-colors" onClick={toggleMenu}>
+            <a href="#about" className="hover:text-[#FFC107] transition-colors" onClick={toggleMenu}>
               About
             </a>
             <a
