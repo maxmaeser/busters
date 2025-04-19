@@ -1,6 +1,23 @@
-# Moe's Tavern - Franchising Landing Page
+# Buster's Burgers: Operation Franchise - Landing Page
 
-This project contains the code for the Moe's Tavern franchising landing page.
+This repository contains the codebase for the Buster's Burgers franchise recruitment landing page.
+
+## Mission Briefing (Purpose)
+
+The primary objective of this landing page is to recruit qualified franchisees for the Buster's Burgers operation. It serves as the initial point of contact, providing essential intel on the brand, the unique franchise model built on **Precision, Passion, and Patties**, and the process for initiating a franchise request.
+
+The brand narrative centers around "Agent K-9" Buster, whose background in elite operations informs the brand's commitment to:
+
+*   **Operational Excellence:** Systems honed for efficiency and consistency.
+*   **Gourmet Adventure:** Premium, mission-inspired burgers and menu items.
+*   **A Unique Market Position:** A compelling story backed by a solid, repeatable model.
+
+## Key Information Requirements
+
+*   **Brand Story:** Communicate the legend of Agent K-9 and the core values.
+*   **Franchise Proposition:** Detail the operational support, investment parameters, and unique benefits of joining the Buster's network.
+*   **Call to Action:** Clear pathway for prospects to request further intelligence (e.g., Franchise Disclosure Document, introductory call).
+*   **Responsive Design:** Ensure seamless access across all devices (desktop, mobile, tablet).
 
 ## Tech Stack
 
@@ -8,17 +25,6 @@ This project contains the code for the Moe's Tavern franchising landing page.
 *   **Language:** TypeScript
 *   **Styling:** Tailwind CSS
 *   **Linting:** ESLint
-
-## Purpose
-
-The purpose of this landing page is to attract potential franchisees for Moe's Tavern by providing information about the brand, the franchising opportunity, and a way to get in touch.
-
-## Basic Requirements
-
-*   Information about the Moe's Tavern brand.
-*   Details about the franchising opportunity (investment, support, etc.).
-*   Contact form or call-to-action for interested parties.
-*   Responsive design for various screen sizes.
 
 ## Getting Started
 

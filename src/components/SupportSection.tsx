@@ -1,17 +1,18 @@
 import React from 'react';
 import Image from 'next/image';
+import { ShieldCheckIcon } from '@heroicons/react/24/outline';
 
 const SupportItem = ({ number, title, description }: { number: string; title: string; description: string }) => {
   return (
-    <div className="flex">
+    <div className="flex group hover:transform hover:scale-102 transition-all duration-300">
       <div className="mr-6">
-        <div className="w-12 h-12 bg-[#FFC107] rounded-full flex items-center justify-center">
-          <span className="text-xl font-bold text-[#3E2723]">{number}</span>
+        <div className="w-12 h-12 bg-saffron-gold rounded-full flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
+          <span className="text-xl font-bold text-grill-charcoal">{number}</span>
         </div>
       </div>
       <div>
-        <h3 className="text-xl font-bold mb-2 text-[#3E2723]">{title}</h3>
-        <p className="text-[#3E2723]">{description}</p>
+        <h3 className="text-xl font-bold mb-2 text-grill-charcoal font-heading">{title}</h3>
+        <p className="text-grill-charcoal font-sans">{description}</p>
       </div>
     </div>
   );
@@ -19,92 +20,120 @@ const SupportItem = ({ number, title, description }: { number: string; title: st
 
 const SupportSection = () => {
   return (
-    <section id="support" className="py-16 md:py-24 bg-[#EFEBE9]">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#3E2723]">
-            Comprehensive Support System
-          </h2>
-          <p className="text-xl text-[#3E2723] max-w-3xl mx-auto">
-            We're with you every step of the way, from site selection to grand opening and beyond.
-          </p>
+    <section id="support" className="py-16 md:py-24 bg-mission-dossier-cream relative">
+      {/* Subtle texture overlay */}
+      <div className="absolute inset-0 opacity-5 bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D%220%200%2064%2064%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.85%22%20stitchTiles%3D%22stitch%22%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20filter%3D%22url%28%23noise%29%22%2F%3E%3C%2Fsvg%3E')] bg-repeat"></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="flex flex-col md:flex-row items-center mb-16">
+          <div className="md:w-1/4 mb-6 md:mb-0 flex justify-center">
+            <ShieldCheckIcon className="w-24 h-24 text-ketchup-red drop-shadow-md" />
+          </div>
+          <div className="md:w-3/4 text-center md:text-left">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-grill-charcoal font-heading">
+              Mission Support Protocol
+            </h2>
+            <div className="w-16 h-1 bg-ketchup-red mx-auto md:mx-0 mb-4"></div>
+            <p className="text-xl text-grill-charcoal max-w-3xl font-sans">
+              Our intelligence and tactical support teams are with you every step of the way, from initial deployment to ongoing operations.
+            </p>
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12 mb-16">
           <SupportItem 
             number="1"
-            title="Site Selection & Development"
-            description="Our real estate team helps you identify prime locations with high traffic and visibility, negotiating favorable lease terms and guiding you through the construction process to ensure your Moe's Tavern looks and feels authentic."
+            title="Location Intelligence & Development"
+            description="Our field team identifies high-value locations, negotiates optimal terms, and guides you through a streamlined build-out process ensuring operational readiness."
           />
           
           <SupportItem 
             number="2"
-            title="Comprehensive Training Program"
-            description="Franchisees undergo 4-6 weeks of training covering operations, customer service, inventory management, staff hiring, and the secret behind perfecting the Flaming Moe and other signature offerings."
+            title="The Buster Protocol Training"
+            description="Franchisees undergo intensive 4-week training covering all aspects of the Buster's operational system, from supply management to burger assembly precision and team leadership."
           />
           
           <SupportItem 
             number="3"
-            title="Marketing & Brand Support"
-            description="Leverage our national marketing campaigns and social media presence while receiving local marketing guidance to establish your Moe's Tavern as the go-to gathering place in your community."
+            title="Strategic Marketing Operations"
+            description="Leverage our targeted marketing campaigns focused on infiltrating local markets while maintaining the unique brand narrative that separates Buster's from standard QSR competitors."
           />
           
           <SupportItem 
             number="4"
-            title="Operational Excellence"
-            description="Access our cloud-based POS system integrated with inventory management, detailed SOPs for every aspect of running your tavern, and ongoing operational support from experienced franchise consultants."
+            title="Operational Excellence Systems"
+            description="Access our cloud-based operations platform with integrated inventory management, detailed mission protocols for every aspect of restaurant operation, and real-time performance tracking."
           />
           
           <SupportItem 
             number="5"
-            title="Supply Chain & Vendor Relationships"
-            description="Benefit from our established supplier relationships, including exclusive contracts for Duff Beer and other Springfield specialties, ensuring consistent quality and favorable pricing."
+            title="Supply Chain Intelligence"
+            description="Benefit from our established supplier network ensuring access to premium ingredients at competitive prices, maintaining the superior quality that defines Buster's Burgers."
           />
           
           <SupportItem 
             number="6"
-            title="Ongoing Business Coaching"
-            description="Regular visits from your dedicated franchise business consultant help you optimize performance, troubleshoot challenges, and implement best practices from across the Moe's Tavern network."
+            title="Field Support & Optimization"
+            description="Regular field visits from your dedicated franchise consultant help optimize performance, troubleshoot challenges, and implement best practices from across the Buster's Burgers network."
           />
         </div>
         
-        {/* Food and beverage showcase */}
+        {/* Food showcase */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
             <Image 
-              src="/compressed-images/Professional Food and Beverage Photography.png"
-              alt="Moe's Tavern Signature Drinks" 
+              src="/images/Extreme_close-up_of_the_signature_Busters_Bu_a10ff432-d167-43b2-934a-bdf95de9f6e1.png"
+              alt="Buster's Signature Burger - meticulously assembled with premium ingredients" 
               fill
               style={{ objectFit: 'cover' }}
               className="transition-transform duration-500 hover:scale-105"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-grill-charcoal/60 to-transparent"></div>
+            <div className="absolute bottom-0 left-0 w-full p-4">
+              <p className="text-redacted-white text-shadow-sm font-sans">Signature Burger</p>
+            </div>
           </div>
           <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
             <Image 
-              src="/compressed-images/Professional Food and Beverage Photography (1).png"
-              alt="Moe's Tavern Food Menu Items" 
+              src="/images/Extreme_close-up_of_the_signature_Busters_Bu_7fac61e4-f349-4eb8-9c4f-41daddf599bb.png"
+              alt="Buster's Sides - field-tested perfection" 
               fill
               style={{ objectFit: 'cover' }}
               className="transition-transform duration-500 hover:scale-105"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-grill-charcoal/60 to-transparent"></div>
+            <div className="absolute bottom-0 left-0 w-full p-4">
+              <p className="text-redacted-white text-shadow-sm font-sans">Field-Tested Sides</p>
+            </div>
           </div>
           <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
             <Image 
-              src="/compressed-images/Professional Food and Beverage Photography (2).png"
-              alt="Moe's Tavern Special Beverages" 
+              src="/images/Tall Glass of Creamy Healthy Banana Milkshake.png"
+              alt="Buster's Premium Beverages - the perfect mission companions" 
               fill
               style={{ objectFit: 'cover' }}
               className="transition-transform duration-500 hover:scale-105"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-grill-charcoal/60 to-transparent"></div>
+            <div className="absolute bottom-0 left-0 w-full p-4">
+              <p className="text-redacted-white text-shadow-sm font-sans">Premium Beverages</p>
+            </div>
           </div>
         </div>
         
         <div className="mt-16 text-center">
           <a
-            href="https://moes-tavern.franchisesystems.ai/signup"
-            className="bg-[#FFC107] hover:bg-[#FFD54F] text-[#5D4037] text-lg font-bold px-8 py-3 rounded-md transition-colors"
+            href="/franchise-application"
+            className="group relative overflow-hidden px-8 py-4 font-bold font-sans text-lg text-grill-charcoal rounded-md
+                     transition-all duration-300 transform hover:scale-105
+                     bg-gradient-to-r from-saffron-gold to-mission-dossier-cream hover:from-mission-dossier-cream hover:to-saffron-gold 
+                     border border-grill-charcoal/50 shadow-md hover:shadow-lg inline-block"
           >
-            Learn About Our Support
+            <span className="relative z-10">
+              Get Started
+            </span>
+            {/* Added shimmer effect */}
+            <span className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-white/0 via-white/20 to-white/0 transform -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out"></span>
           </a>
         </div>
       </div>

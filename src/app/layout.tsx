@@ -1,12 +1,29 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Montserrat, Bebas_Neue } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: '--font-inter',
+  display: 'swap',
+});
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  variable: '--font-montserrat',
+  display: 'swap',
+});
+
+const bebas_neue = Bebas_Neue({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-bebas-neue',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
-  title: "Moe's Tavern Franchise Opportunity",
-  description: "Join the Moe's Tavern franchise family! With initial investments from $550,000-$800,000 and average unit sales of $1.3M, be part of this thriving brand with Springfield roots.",
+  title: "Buster's Burgers Franchise | Classified Comfort Food",
+  description: "Own a piece of the action. Buster's Burgers: Precision, Passion, Patties. Join a unique franchise opportunity built on operational excellence and gourmet adventure. Inquire about your franchise mission today.",
 };
 
 export default function RootLayout({
@@ -16,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.variable} ${montserrat.variable} ${bebas_neue.variable} font-sans`}>
         <main className="min-h-screen">{children}</main>
       </body>
     </html>

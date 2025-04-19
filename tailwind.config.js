@@ -7,12 +7,32 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        // Core Ops Colors
+        'grill-charcoal': '#36454F',
+        'bunker-concrete': '#A9A9A9',
+        'mission-dossier-cream': '#F5F5DC',
+
+        // Flavor Accent Colors
+        'ketchup-red': '#FF6347',
+        'saffron-gold': '#FFDB58',
+        'olive-drab-green': '#6B8E23',
+
+        // Utility Colors
+        'classified-black': '#000000',
+        'redacted-white': '#FFFFFF',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
+        // Reference CSS variables set in layout.tsx
+        sans: ['var(--font-inter)', 'sans-serif'],
+        heading: ['var(--font-montserrat)', 'sans-serif'],
+        display: ['var(--font-bebas-neue)', 'sans-serif'],
+        // Keep serif as fallback if needed, or remove if unused
         serif: ['Georgia', 'serif'],
       },
       animation: {

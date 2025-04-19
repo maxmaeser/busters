@@ -3,52 +3,54 @@ import Image from 'next/image';
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-16 md:py-24 bg-[#EFEBE9]">
+    <section id="about" className="py-16 md:py-24 bg-mission-dossier-cream">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-10">
-          {/* Image - left side */}
-          <div className="w-full md:w-1/2 relative aspect-video rounded-lg mb-8 md:mb-0 overflow-hidden">
-            <Image 
-              src="/compressed-images/Professional Business Portrait.png"
-              alt="Moe Szyslak - Founder of Moe's Tavern"
+          {/* Image - Needs review */}
+          <div className="w-full md:w-1/2 relative aspect-video rounded-lg mb-8 md:mb-0 overflow-hidden shadow-lg">
+            {/* Updated image with proper branding */}
+            <Image
+              src="/images/mushgrower98_90565_a_b2bomber_style_modern_sleek_but_still_lu_5e404454-b57d-4e69-bbc2-d3b33d954687_1.png"
+              alt="Buster's Burgers sleek, modern interior with tactical-inspired design elements"
               fill
               style={{ objectFit: 'cover' }}
               className="rounded-lg"
+              quality={75}
             />
           </div>
           
           {/* Content - right side */}
           <div className="w-full md:w-1/2">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#3E2723]">
-              The Moe's Tavern Story
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-grill-charcoal font-heading">
+              From Covert Ops to Culinary Craft: The Buster Protocol
             </h2>
             
-            <p className="text-lg mb-6 text-[#3E2723]">
-              Originally founded by Moe Szyslak in Springfield, Moe's Tavern quickly became a local institution. Starting with three pilot locations, the authentic dive bar atmosphere and unique charm captured the hearts of locals everywhere.
+            <p className="text-lg mb-4 text-grill-charcoal font-sans">
+              Buster's Burgers was forged in the crucible of experience. Our founder, the operative known only as "Agent K-9" Buster, spent years mastering logistics, precision, and resourcefulness in high-stakes environments globally. His debriefing? Applying those same exacting standards to his true passion: the pursuit of the perfect burger.
             </p>
             
-            <p className="text-lg mb-6 text-[#3E2723]">
-              Recognizing the potential to share this beloved establishment with a wider audience, Franchise Systems Ai Inc. acquired the brand to help expand Moe's vision nationwide while preserving its authentic character and spirit.
+            <p className="text-lg mb-4 text-grill-charcoal font-sans">
+              This isn't just fast food; it's a meticulously planned operation. Buster leverages field-tested techniques for everything from sourcing unique, high-quality ingredients ('asset acquisition') to optimizing kitchen workflow ('operational efficiency'). The result is a menu of adventurously gourmet burgers delivered with unparalleled consistency.
             </p>
             
-            <p className="text-lg mb-8 text-[#3E2723]">
-              Today, Moe's Tavern stands as a symbol of genuine hospitality, irreverent humor, and a welcoming community atmosphere. Our mission is to keep these values intact as we grow across the nation.
+            <p className="text-lg mb-8 text-grill-charcoal font-sans">
+              We offer franchisees more than a brand; we provide a proven operational protocol. A system built on discipline, driven by passion, designed for mission success in the competitive QSR landscape.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-8 justify-center md:justify-start">
               <div className="flex flex-col items-center sm:items-start">
-                <span className="text-4xl font-bold text-[#FFC107] drop-shadow-sm">30+</span>
-                <span className="text-[#3E2723] font-medium">Years of Success</span>
+                <span className="text-4xl font-bold text-ketchup-red drop-shadow-sm">$1.2M+</span>
+                <span className="text-grill-charcoal font-medium font-sans">Avg. Unit Volume</span>
               </div>
               
               <div className="flex flex-col items-center sm:items-start">
-                <span className="text-4xl font-bold text-[#FFC107] drop-shadow-sm">15-20%</span>
-                <span className="text-[#3E2723] font-medium">EBITDA Margin</span>
+                <span className="text-4xl font-bold text-ketchup-red drop-shadow-sm">18-20%</span>
+                <span className="text-grill-charcoal font-medium font-sans">Target EBITDA</span>
               </div>
               
               <div className="flex flex-col items-center sm:items-start">
-                <span className="text-4xl font-bold text-[#FFC107] drop-shadow-sm">6%</span>
-                <span className="text-[#3E2723] font-medium">Royalty Fee</span>
+                <span className="text-4xl font-bold text-ketchup-red drop-shadow-sm">5% + 2%</span>
+                <span className="text-grill-charcoal font-medium font-sans">Royalty + Mktg</span>
               </div>
             </div>
           </div>
