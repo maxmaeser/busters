@@ -40,17 +40,18 @@ const Header = () => {
             About
             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-saffron-gold transition-all duration-300 group-hover:w-full"></span>
           </a>
-          <a
-            href="/franchise-application"
+          
+          <Link
+            href="/franchise-application" // Link to franchise application
             className="relative overflow-hidden px-8 py-2.5 font-medium font-sans text-grill-charcoal rounded-md transition-all duration-300
-                     bg-gradient-to-r from-saffron-gold to-mission-dossier-cream hover:from-mission-dossier-cream hover:to-saffron-gold 
-                     border border-grill-charcoal/50 shadow-md hover:shadow-lg text-shadow-sm group"
+                    bg-gradient-to-r from-saffron-gold to-mission-dossier-cream hover:from-mission-dossier-cream hover:to-saffron-gold 
+                    border border-grill-charcoal/50 shadow-md hover:shadow-lg text-shadow-sm group"
           >
             <span className="relative z-10">
               Get Started
             </span>
             <span className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-white/0 via-white/20 to-white/0 transform -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out"></span>
-          </a>
+          </Link>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -58,28 +59,9 @@ const Header = () => {
           className="md:hidden text-redacted-white focus:outline-none border border-bunker-concrete/40 rounded p-1 bg-grill-charcoal/50 backdrop-blur-sm"
           onClick={toggleMenu}
         >
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            {isMenuOpen ? (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
-            ) : (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            )}
+           {/* Standard Menu Icon - Simplified */}
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7"></path>
           </svg>
         </button>
       </div>
@@ -91,18 +73,18 @@ const Header = () => {
             <a href="#about" className="hover:text-saffron-gold transition-colors font-sans text-shadow-sm" onClick={toggleMenu}>
               About
             </a>
-            <a
-              href="/franchise-application"
+            <Link
+              href="/franchise-application" // Link to franchise application
               className="relative overflow-hidden px-6 py-2.5 font-medium font-sans text-grill-charcoal rounded-md transition-all duration-300
-                       bg-gradient-to-r from-saffron-gold to-mission-dossier-cream hover:from-mission-dossier-cream hover:to-saffron-gold 
-                       border border-grill-charcoal/50 shadow-md hover:shadow-lg text-center text-shadow-sm group"
+                      bg-gradient-to-r from-saffron-gold to-mission-dossier-cream hover:from-mission-dossier-cream hover:to-saffron-gold 
+                      border border-grill-charcoal/50 shadow-md hover:shadow-lg text-center text-shadow-sm group"
               onClick={toggleMenu}
             >
               <span className="relative z-10">
                 Get Started
               </span>
               <span className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-white/0 via-white/20 to-white/0 transform -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out"></span>
-            </a>
+            </Link>
           </nav>
         </div>
       )}
