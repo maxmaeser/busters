@@ -26,11 +26,11 @@ const AboutSection = () => {
             </h2>
             
             <p className="text-lg mb-4 text-grill-charcoal font-sans">
-              Buster's Burgers was forged in the crucible of experience. Our founder, the operative known only as "Agent K-9" Buster, spent years mastering logistics, precision, and resourcefulness in high-stakes environments globally. His debriefing? Applying those same exacting standards to his true passion: the pursuit of the perfect burger.
+              Buster&apos;s Burgers was forged in the crucible of experience. Our founder, the operative known only as &quot;Agent K-9&quot; Buster, spent years mastering logistics, precision, and resourcefulness in high-stakes environments globally. His debriefing? Applying those same exacting standards to his true passion: the pursuit of the perfect burger.
             </p>
             
             <p className="text-lg mb-4 text-grill-charcoal font-sans">
-              This isn't just fast food; it's a meticulously planned operation. Buster leverages field-tested techniques for everything from sourcing unique, high-quality ingredients ('asset acquisition') to optimizing kitchen workflow ('operational efficiency'). The result is a menu of adventurously gourmet burgers delivered with unparalleled consistency.
+              This isn&apos;t just fast food; it&apos;s a meticulously planned operation. Buster leverages field-tested techniques for everything from sourcing unique, high-quality ingredients (&apos;asset acquisition&apos;) to optimizing kitchen workflow (&apos;operational efficiency&apos;). The result is a menu of adventurously gourmet burgers delivered with unparalleled consistency.
             </p>
             
             <p className="text-lg mb-8 text-grill-charcoal font-sans">

@@ -10,7 +10,7 @@ const InvestmentSection = () => {
             Operation Intelligence: Investment & Returns
           </h2>
           <p className="text-xl max-w-3xl mx-auto font-sans">
-            A strategic briefing on what it takes to deploy a Buster's Burgers franchise and the mission outcomes you can expect.
+            A strategic briefing on what it takes to deploy a Buster&apos;s Burgers franchise and the mission outcomes you can expect.
           </p>
         </div>
 
@@ -31,7 +31,7 @@ const InvestmentSection = () => {
                   <span className="text-lg">Initial Franchise Fee</span>
                   <span className="text-xl font-bold text-saffron-gold">$45,000</span>
                 </div>
-                <p className="text-sm text-mission-dossier-cream">One-time fee to join the Buster's Burgers franchise network</p>
+                <p className="text-sm text-mission-dossier-cream">One-time fee to join the Buster&apos;s Burgers franchise network</p>
               </div>
               
               <div>

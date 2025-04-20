@@ -44,7 +44,7 @@ const CtaSection = () => {
             </h2>
             
             <p className="text-xl mb-2 relative z-10 text-redacted-white text-shadow-sm font-sans">
-              Initiate the franchise acquisition process and join the ranks of Buster's Burgers operators.
+              Initiate the franchise acquisition process and join the ranks of Buster&apos;s Burgers operators.
             </p>
             <p className="text-lg mb-0 text-redacted-white italic text-shadow-sm font-sans">
               Precision. Passion. Patties. Profit.
@@ -75,7 +75,7 @@ const CtaSection = () => {
             <div className="space-y-5">
               <BulletPoint>Access to Mission-Inspired Gourmet Menu</BulletPoint>
               <BulletPoint>Strategic Site Selection & Territory Analysis</BulletPoint>
-              <BulletPoint>Comprehensive 'Buster Protocol' Training</BulletPoint>
+              <BulletPoint>Comprehensive &apos;Buster Protocol&apos; Training</BulletPoint>
             </div>
           </div>
           

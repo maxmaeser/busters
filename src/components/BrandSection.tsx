@@ -65,7 +65,7 @@ const BrandSection = () => {
           
           {/* Updated Heading and Text */}
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-grill-charcoal font-heading tracking-tight inline-block relative">
-            The Buster's Burgers Advantage
+            The Buster&apos;s Burgers Advantage
             <div className="absolute -bottom-3 left-0 w-full h-1 bg-gradient-to-r from-transparent via-ketchup-red to-transparent"></div> {/* Updated color */} 
           </h2>
           

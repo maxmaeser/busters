@@ -67,7 +67,7 @@ const OpportunitySection = () => {
             Your Mission: Franchise Success
           </h2>
           <p className="text-xl text-grill-charcoal max-w-3xl mx-auto font-sans">
-            Buster's Burgers presents a unique franchise opportunity engineered for disciplined entrepreneurs seeking a proven system with a powerful edge.
+            Buster&apos;s Burgers presents a unique franchise opportunity engineered for disciplined entrepreneurs seeking a proven system with a powerful edge.
           </p>
         </div>
 

@@ -55,7 +55,7 @@ const HeroSection: React.FC = () => {
         <div className="bg-grill-charcoal/70 backdrop-blur-sm rounded-lg p-6 shadow-lg max-w-3xl mx-auto mb-12 border border-bunker-concrete/30">
           <p className="text-xl md:text-2xl font-sans text-redacted-white drop-shadow-lg text-shadow-md">
             Experience burgers crafted with operational excellence and adventurous flavor.
-            Join the mission: Deploy a Buster's Burgers franchise.
+            Join the mission: Deploy a Buster&apos;s Burgers franchise.
           </p>
         </div>
         
