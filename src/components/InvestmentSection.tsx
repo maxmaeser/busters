@@ -114,8 +114,8 @@ const InvestmentSection = () => {
                      bg-gradient-to-r from-saffron-gold to-mission-dossier-cream hover:from-mission-dossier-cream hover:to-saffron-gold
                      border border-grill-charcoal/50 shadow-lg hover:shadow-xl"
           >
-            {/* Light shine effect on hover */}
-            <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out"></span>
+            {/* Adjusted light shine effect */}
+            <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-500 ease-in-out"></span>
             
             <span className="relative z-10">
               Get Started

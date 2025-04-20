@@ -82,7 +82,7 @@ const SupportSection = () => {
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
             <Image 
-              src="/images/Extreme_close-up_of_the_signature_Busters_Bu_a10ff432-d167-43b2-934a-bdf95de9f6e1.png"
+              src="/images/Busters Bu Close-up.png"
               alt="Buster's Signature Burger - meticulously assembled with premium ingredients" 
               fill
               style={{ objectFit: 'cover' }}
@@ -95,7 +95,7 @@ const SupportSection = () => {
           </div>
           <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
             <Image 
-              src="/images/Extreme_close-up_of_the_signature_Busters_Bu_7fac61e4-f349-4eb8-9c4f-41daddf599bb.png"
+              src="/images/Busters Bu Close-up.png"
               alt="Buster's Sides - field-tested perfection" 
               fill
               style={{ objectFit: 'cover' }}
@@ -126,14 +126,14 @@ const SupportSection = () => {
             href="/franchise-application"
             className="group relative overflow-hidden px-8 py-4 font-bold font-sans text-lg text-grill-charcoal rounded-md
                      transition-all duration-300 transform hover:scale-105
-                     bg-gradient-to-r from-saffron-gold to-mission-dossier-cream hover:from-mission-dossier-cream hover:to-saffron-gold 
+                     bg-gradient-to-r from-saffron-gold to-mission-dossier-cream hover:from-mission-dossier-cream hover:to-saffron-gold
                      border border-grill-charcoal/50 shadow-md hover:shadow-lg inline-block"
           >
             <span className="relative z-10">
               Get Started
             </span>
-            {/* Added shimmer effect */}
-            <span className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-white/0 via-white/20 to-white/0 transform -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out"></span>
+            {/* Adjusted shimmer effect */}
+            <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-white/0 via-white/20 to-white/0 transform -translate-x-full group-hover:translate-x-full transition-transform duration-500 ease-in-out"></span>
           </a>
         </div>
       </div>
