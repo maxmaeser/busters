@@ -25,13 +25,9 @@ const BulletPoint = ({ children }: { children: React.ReactNode }) => (
 const CtaSection = () => {
   return (
     <section className="py-16 md:py-20 bg-gradient-to-b from-grill-charcoal to-bunker-concrete text-redacted-white relative">
-      {/* Texture overlay */}
-      <div className="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D%220%200%2040%2040%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M0%2020h40v20H0V20zM40%200v20H20V0h20z%22%20fill%3D%22%23FFFFFF%22%20fill-opacity%3D%220.8%22%2F%3E%3C%2Fsvg%3E')] bg-repeat"></div>
+      {/* Texture overlay REMOVED */}
       
-      {/* Decorative elements */}
-      <div className="absolute top-0 left-0 w-full h-4 bg-gradient-to-r from-transparent via-bunker-concrete/30 to-transparent"></div>
-      <div className="absolute -top-1 left-1/4 w-1 h-6 bg-bunker-concrete"></div>
-      <div className="absolute -top-2 right-1/3 w-2 h-8 bg-bunker-concrete"></div>
+      {/* Decorative elements REMOVED */}
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
@@ -88,7 +84,7 @@ const CtaSection = () => {
                      border border-grill-charcoal/50 shadow-lg hover:shadow-xl font-sans"
             >
               {/* Light shine effect on hover */}
-              <span className="absolute inset-0 w-full h-full transform -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/20 to-transparent"></span>
+              <span className="absolute inset-0 w-full h-full transform -translate-x-[101%] group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/20 to-transparent"></span>
               
               {/* Button content */}
               <span className="relative z-10 inline-flex items-center tracking-wide">
@@ -99,11 +95,6 @@ const CtaSection = () => {
               </span>
               
             </a>
-            
-            <p className="mt-6 text-sm text-bunker-concrete italic font-sans">
-              This information is not intended as an offer to sell a franchise.<br />
-              The offer of a Buster&apos;s Burgers franchise is made by FDD only.
-            </p>
           </div>
         </div>
       </div>

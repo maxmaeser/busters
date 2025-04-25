@@ -14,8 +14,8 @@ const Header = () => {
   return (
     <header className="bg-grill-charcoal text-redacted-white border-b-4 border-ketchup-red shadow-md relative">
       {/* Removed SVG texture overlay */}
-      {/* Added gradient overlay for contrast */}
-      <div className="absolute inset-0 bg-gradient-to-b from-grill-charcoal/90 via-grill-charcoal/70 to-transparent opacity-90 z-0"></div>
+      {/* Added gradient overlay for contrast - Modified end color */}
+      <div className="absolute inset-0 bg-gradient-to-b from-grill-charcoal/90 via-grill-charcoal/70 to-grill-charcoal/70 opacity-90 z-0"></div>
       
       <div className="container mx-auto px-4 py-3 flex justify-between items-center relative z-10">
         <div className="flex items-center">

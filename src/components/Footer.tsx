@@ -35,7 +35,7 @@ const Footer = () => {
             </Link>
           </div>
           
-          {/* Social Media Icons */}
+          {/* Social Media Icons - MOVED TO THE RIGHT */}
           <div className="flex space-x-4 mb-6 md:mb-0">
             <a href="#" className="group" aria-label="Visit our website">
               <GlobeAltIcon className="h-6 w-6 text-bunker-concrete group-hover:text-saffron-gold transition-colors duration-300" />
@@ -48,25 +48,8 @@ const Footer = () => {
             </a>
           </div>
           
-          {/* Updated CTA Button */}
-          <div>
-            <a
-              href="/franchise-application"
-              className="group relative overflow-hidden px-8 py-2.5 font-medium font-sans text-grill-charcoal rounded-md
-                     transition-all duration-300 transform hover:scale-105
-                     bg-gradient-to-r from-saffron-gold to-mission-dossier-cream hover:from-mission-dossier-cream hover:to-saffron-gold
-                     border border-grill-charcoal/50 shadow-md hover:shadow-lg"
-            >
-              {/* Removed texture overlay */}
-              
-              {/* Light shimmer effect */}
-              <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out"></span>
-              
-              <span className="relative z-10">
-                Get Started
-              </span>
-            </a>
-          </div>
+          {/* Updated CTA Button - REMOVED */}
+          
         </div>
         
         <hr className="border-bunker-concrete my-6 opacity-30" />
@@ -88,6 +71,13 @@ const Footer = () => {
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-saffron-gold/50 transition-all duration-300 group-hover:w-full"></span>
             </Link>
           </div>
+        </div>
+        
+        {/* Added Legal Disclaimer */}
+        <div className="mt-4 text-center md:text-left">
+          <p className="text-xs text-bunker-concrete/70 font-sans italic">
+            *Buster&apos;s Burgers is a demonstration brand concept. All financial figures presented are illustrative examples and not based on actual operational data.
+          </p>
         </div>
       </div>
     </footer>

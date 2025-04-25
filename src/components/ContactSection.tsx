@@ -70,10 +70,6 @@ const ContactSection = () => {
             </span>
             <span className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-white/0 via-white/20 to-white/0 transform -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out"></span>
           </a>
-          
-          <p className="mt-6 text-sm text-bunker-concrete font-sans">
-            This information is not intended as an offer to sell a franchise. The offer of a Buster&apos;s Burgers franchise is made by FDD only.
-          </p>
         </div>
       </div>
     </section>

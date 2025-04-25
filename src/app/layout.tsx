@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Montserrat, Bebas_Neue } from "next/font/google";
 import "./globals.css";
+import ClientLayout from '../components/ClientLayout';
 
 const inter = Inter({
   subsets: ["latin"],
@@ -34,7 +35,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${montserrat.variable} ${bebas_neue.variable} font-sans`}>
-        <main className="min-h-screen">{children}</main>
+        <ClientLayout>
+          <main className="min-h-screen">{children}</main>
+        </ClientLayout>
       </body>
     </html>
   );

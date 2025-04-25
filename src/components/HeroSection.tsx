@@ -28,9 +28,6 @@ const HeroSection: React.FC = () => {
       {/* Gradient overlay - Increased opacity for better contrast */}
       <div className="absolute inset-0 bg-gradient-to-r from-grill-charcoal/95 via-grill-charcoal/90 to-grill-charcoal/95 z-10"></div>
       
-      {/* Optional texture overlay (kept existing subtle noise) */}
-      <div className="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D%220%200%2064%2064%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.65%22%20stitchTiles%3D%22stitch%22%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20filter%3D%22url%28%23noise%29%22%2F%3E%3C%2Fsvg%3E')] bg-repeat z-10"></div>
-      
       {/* Hero content - Ensure it has a higher z-index */}
       <div className="relative container mx-auto px-4 py-24 md:py-32 flex flex-col items-center text-center z-20">
         <div className="mb-6 inline-block relative">
@@ -59,22 +56,24 @@ const HeroSection: React.FC = () => {
           </p>
         </div>
         
-        {/* Updated Button - Colors, Text, and Animation */}
+        {/* Updated Button - Matching CTA Style */}
         <a 
           href="/franchise-application"
-          className="group relative overflow-hidden px-10 py-4 font-bold font-sans text-xl text-grill-charcoal rounded-md
-                   transition-all duration-300 transform hover:scale-105
-                   bg-gradient-to-r from-saffron-gold to-mission-dossier-cream hover:from-mission-dossier-cream hover:to-saffron-gold 
-                   border border-grill-charcoal/50 shadow-lg hover:shadow-xl"
+          className="group relative inline-block overflow-hidden px-10 py-4 font-bold text-xl text-grill-charcoal rounded-md
+                     transition-all duration-300 transform hover:scale-105
+                     bg-gradient-to-r from-saffron-gold to-mission-dossier-cream hover:from-mission-dossier-cream hover:to-saffron-gold
+                     border border-grill-charcoal/50 shadow-lg hover:shadow-xl font-sans"
         >
-          <span className="relative z-10 inline-flex items-center">
+          {/* Light shine effect from CTA */}
+          <span className="absolute inset-0 w-full h-full transform -translate-x-[101%] group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/20 to-transparent"></span>
+          
+          {/* Button content from CTA */}
+          <span className="relative z-10 inline-flex items-center tracking-wide">
             Get Started
             <svg className="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>
           </span>
-           {/* Added shimmer effect */}
-           <span className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-white/0 via-white/20 to-white/0 transform -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out"></span>
         </a>
         
         {/* Decoration - Update colors (using redacted-white/bunker-concrete for subtlety) */}

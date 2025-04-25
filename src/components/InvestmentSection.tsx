@@ -29,7 +29,7 @@ const InvestmentSection = () => {
               <div>
                 <div className="flex justify-between items-center mb-2">
                   <span className="text-lg">Initial Franchise Fee</span>
-                  <span className="text-xl font-bold text-saffron-gold">$45,000</span>
+                  <span className="text-xl font-bold text-saffron-gold">$45,000<sup>*</sup></span>
                 </div>
                 <p className="text-sm text-mission-dossier-cream">One-time fee to join the Buster&apos;s Burgers franchise network</p>
               </div>
@@ -37,7 +37,7 @@ const InvestmentSection = () => {
               <div>
                 <div className="flex justify-between items-center mb-2">
                   <span className="text-lg">Total Initial Investment</span>
-                  <span className="text-xl font-bold text-saffron-gold">$300K-$700K</span>
+                  <span className="text-xl font-bold text-saffron-gold">$300K-$700K<sup>*</sup></span>
                 </div>
                 <p className="text-sm text-mission-dossier-cream">Includes franchise fee, build-out, equipment, and initial operations capital</p>
               </div>
@@ -45,7 +45,7 @@ const InvestmentSection = () => {
               <div>
                 <div className="flex justify-between items-center mb-2">
                   <span className="text-lg">Royalty Fee</span>
-                  <span className="text-xl font-bold text-saffron-gold">5%</span>
+                  <span className="text-xl font-bold text-saffron-gold">5%<sup>*</sup></span>
                 </div>
                 <p className="text-sm text-mission-dossier-cream">Of gross revenue, paid monthly</p>
               </div>
@@ -53,7 +53,7 @@ const InvestmentSection = () => {
               <div>
                 <div className="flex justify-between items-center mb-2">
                   <span className="text-lg">Marketing Fee</span>
-                  <span className="text-xl font-bold text-saffron-gold">2%</span>
+                  <span className="text-xl font-bold text-saffron-gold">2%<sup>*</sup></span>
                 </div>
                 <p className="text-sm text-mission-dossier-cream">Contribution to the strategic marketing operations</p>
               </div>
@@ -74,7 +74,7 @@ const InvestmentSection = () => {
               <div>
                 <div className="flex justify-between items-center mb-2">
                   <span className="text-lg">Average Unit Volume</span>
-                  <span className="text-xl font-bold text-saffron-gold">$1.2M+</span>
+                  <span className="text-xl font-bold text-saffron-gold">$1.2M+<sup>*</sup></span>
                 </div>
                 <p className="text-sm text-mission-dossier-cream">Annual gross revenue per location</p>
               </div>
@@ -82,7 +82,7 @@ const InvestmentSection = () => {
               <div>
                 <div className="flex justify-between items-center mb-2">
                   <span className="text-lg">Target EBITDA</span>
-                  <span className="text-xl font-bold text-saffron-gold">18-20%</span>
+                  <span className="text-xl font-bold text-saffron-gold">18-20%<sup>*</sup></span>
                 </div>
                 <p className="text-sm text-mission-dossier-cream">Earnings before interest, taxes, depreciation, and amortization</p>
               </div>
@@ -90,7 +90,7 @@ const InvestmentSection = () => {
               <div>
                 <div className="flex justify-between items-center mb-2">
                   <span className="text-lg">Operational Timeline</span>
-                  <span className="text-xl font-bold text-saffron-gold">4-6 Months</span>
+                  <span className="text-xl font-bold text-saffron-gold">4-6 Months<sup>*</sup></span>
                 </div>
                 <p className="text-sm text-mission-dossier-cream">Average time from signing to grand opening</p>
               </div>
@@ -98,42 +98,32 @@ const InvestmentSection = () => {
               <div>
                 <div className="flex justify-between items-center mb-2">
                   <span className="text-lg">ROI Timeline</span>
-                  <span className="text-xl font-bold text-saffron-gold">3-4 Years</span>
+                  <span className="text-xl font-bold text-saffron-gold">3-4 Years<sup>*</sup></span>
                 </div>
                 <p className="text-sm text-mission-dossier-cream">Expected time to recoup initial investment</p>
               </div>
             </div>
           </div>
         </div>
-        
-        <div className="text-center">
-          <a
-            href="/franchise-application"
-            className="group relative overflow-hidden px-8 py-4 font-bold font-sans text-lg text-grill-charcoal rounded-md
-                     transition-all duration-300 transform hover:scale-105
-                     bg-gradient-to-r from-saffron-gold to-mission-dossier-cream hover:from-mission-dossier-cream hover:to-saffron-gold
-                     border border-grill-charcoal/50 shadow-lg hover:shadow-xl"
-          >
-            {/* Adjusted light shine effect */}
-            <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-500 ease-in-out"></span>
-            
-            <span className="relative z-10">
-              Get Started
-            </span>
-          </a>
+
+        {/* Added Financial Disclaimer */}
+        <div className="mt-8 text-center">
+          <p className="text-xs text-bunker-concrete/70 font-sans italic">
+            *Buster&apos;s Burgers is a demonstration brand concept. All financial figures, timelines, and projections presented are illustrative examples for demonstration purposes only and are not based on actual operational data or guarantees of performance.
+          </p>
         </div>
         
         {/* Food showcase */}
         <div className="mt-16 max-w-5xl mx-auto">
           <div className="relative aspect-[21/9] rounded-lg overflow-hidden shadow-xl">
             <Image
-              src="/images/Extreme_close-up_of_the_signature_Busters_Bu_a10ff432-d167-43b2-934a-bdf95de9f6e1.png"
+              src="/images/mushgrower98_90565_Extreme_close-up_of_the_signature_Busters_Bu_7fac61e4-f349-4eb8-9c4f-41daddf599bb.png"
               alt="Buster's premium gourmet burger and fries, meticulously assembled with top-quality ingredients."
               fill
               style={{ objectFit: 'cover' }}
               className="rounded-lg"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-grill-charcoal/80 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-grill-charcoal/90 to-transparent"></div>
             <div className="absolute bottom-0 left-0 w-full p-6 text-center">
               <p className="text-xl font-sans italic text-redacted-white text-shadow-sm">
                 Premium ingredients. Precise execution. Passionate service.
