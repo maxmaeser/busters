@@ -42,10 +42,12 @@ const Header = () => {
           </a>
           
           <Link
-            href="/franchise-application" // Link to franchise application
+            href="https://busters-burger.franchisesystems.ai/signup?utm_source=franchising-landingpage&utm_campaign=test31" // Link to franchise application
             className="relative overflow-hidden px-8 py-2.5 font-medium font-sans text-grill-charcoal rounded-md transition-all duration-300
                     bg-gradient-to-r from-saffron-gold to-mission-dossier-cream hover:from-mission-dossier-cream hover:to-saffron-gold 
                     border border-grill-charcoal/50 shadow-md hover:shadow-lg text-shadow-sm group"
+            target="_blank" 
+            rel="noopener noreferrer"
           >
             <span className="relative z-10">
               Get Started
@@ -74,11 +76,13 @@ const Header = () => {
               About
             </a>
             <Link
-              href="/franchise-application" // Link to franchise application
+              href="https://busters-burger.franchisesystems.ai/signup?utm_source=franchising-landingpage&utm_campaign=test31" // Link to franchise application
               className="relative overflow-hidden px-6 py-2.5 font-medium font-sans text-grill-charcoal rounded-md transition-all duration-300
                       bg-gradient-to-r from-saffron-gold to-mission-dossier-cream hover:from-mission-dossier-cream hover:to-saffron-gold 
                       border border-grill-charcoal/50 shadow-md hover:shadow-lg text-center text-shadow-sm group"
               onClick={toggleMenu}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <span className="relative z-10">
                 Get Started

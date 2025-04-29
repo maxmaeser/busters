@@ -37,13 +37,13 @@ const Footer = () => {
           
           {/* Social Media Icons - MOVED TO THE RIGHT */}
           <div className="flex space-x-4 mb-6 md:mb-0">
-            <a href="#" className="group" aria-label="Visit our website">
+            <a href="https://busters-burger.franchisesystems.ai/signup?utm_source=franchising-landingpage&utm_campaign=test31" className="group" aria-label="Visit our website" target="_blank" rel="noopener noreferrer">
               <GlobeAltIcon className="h-6 w-6 text-bunker-concrete group-hover:text-saffron-gold transition-colors duration-300" />
             </a>
-            <a href="#" className="group" aria-label="Contact us">
+            <a href="https://busters-burger.franchisesystems.ai/signup?utm_source=franchising-landingpage&utm_campaign=test31" className="group" aria-label="Contact us" target="_blank" rel="noopener noreferrer">
               <ChatBubbleLeftRightIcon className="h-6 w-6 text-bunker-concrete group-hover:text-saffron-gold transition-colors duration-300" />
             </a>
-            <a href="#" className="group" aria-label="Download brochure">
+            <a href="https://busters-burger.franchisesystems.ai/signup?utm_source=franchising-landingpage&utm_campaign=test31" className="group" aria-label="Download brochure" target="_blank" rel="noopener noreferrer">
               <DocumentTextIcon className="h-6 w-6 text-bunker-concrete group-hover:text-saffron-gold transition-colors duration-300" />
             </a>
           </div>

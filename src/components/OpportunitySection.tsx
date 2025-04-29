@@ -102,11 +102,13 @@ const OpportunitySection = () => {
         
         <div className="mt-16 text-center">
           <a
-            href="/franchise-application"
+            href="https://busters-burger.franchisesystems.ai/signup?utm_source=franchising-landingpage&utm_campaign=test31"
             className="group relative overflow-hidden px-8 py-4 font-bold font-sans text-lg text-grill-charcoal rounded-md
                      transition-all duration-300 transform hover:scale-105
                      bg-gradient-to-r from-saffron-gold to-mission-dossier-cream hover:from-mission-dossier-cream hover:to-saffron-gold 
                      border border-grill-charcoal/50 shadow-md hover:shadow-lg inline-block"
+            target="_blank" 
+            rel="noopener noreferrer"
           >
             <span className="relative z-10">
               Get Started

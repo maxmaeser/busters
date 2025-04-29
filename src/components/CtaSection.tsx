@@ -77,11 +77,13 @@ const CtaSection = () => {
           
           <div className="text-center">
             <a
-              href="/franchise-application"
+              href="https://busters-burger.franchisesystems.ai/signup?utm_source=franchising-landingpage&utm_campaign=test31"
               className="group relative inline-block overflow-hidden px-10 py-4 font-bold text-xl text-grill-charcoal rounded-md
                      transition-all duration-300 transform hover:scale-105
                      bg-gradient-to-r from-saffron-gold to-mission-dossier-cream hover:from-mission-dossier-cream hover:to-saffron-gold
                      border border-grill-charcoal/50 shadow-lg hover:shadow-xl font-sans"
+              target="_blank" 
+              rel="noopener noreferrer"
             >
               {/* Light shine effect on hover */}
               <span className="absolute inset-0 w-full h-full transform -translate-x-[101%] group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/20 to-transparent"></span>

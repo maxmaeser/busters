@@ -39,17 +39,17 @@ const AboutSection = () => {
             
             <div className="flex flex-col sm:flex-row gap-8 justify-center md:justify-start">
               <div className="flex flex-col items-center sm:items-start">
-                <span className="text-4xl font-bold text-ketchup-red drop-shadow-sm">$1.2M+</span>
+                <span className="text-4xl font-bold text-ketchup-red drop-shadow-sm">$1.2M+<sup>*</sup></span>
                 <span className="text-grill-charcoal font-medium font-sans">Avg. Unit Volume</span>
               </div>
               
               <div className="flex flex-col items-center sm:items-start">
-                <span className="text-4xl font-bold text-ketchup-red drop-shadow-sm">18-20%</span>
+                <span className="text-4xl font-bold text-ketchup-red drop-shadow-sm">18-20%<sup>*</sup></span>
                 <span className="text-grill-charcoal font-medium font-sans">Target EBITDA</span>
               </div>
               
               <div className="flex flex-col items-center sm:items-start">
-                <span className="text-4xl font-bold text-ketchup-red drop-shadow-sm">5% + 2%</span>
+                <span className="text-4xl font-bold text-ketchup-red drop-shadow-sm">5%<sup>*</sup> + 2%<sup>*</sup></span>
                 <span className="text-grill-charcoal font-medium font-sans">Royalty + Mktg</span>
               </div>
             </div>

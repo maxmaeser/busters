@@ -115,15 +115,15 @@ const BrandSection = () => {
           {/* Updated financial stats based on overview */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center font-sans"> {/* Updated font */} 
             <div className="group hover:transform hover:scale-105 transition-transform duration-300 cursor-default">
-              <p className="text-3xl font-bold text-ketchup-red drop-shadow-sm group-hover:text-saffron-gold transition-colors">$300K-$700K</p>
+              <p className="text-3xl font-bold text-ketchup-red drop-shadow-sm group-hover:text-saffron-gold transition-colors">$300K-$700K*</p>
               <p className="text-grill-charcoal font-medium">Initial Investment</p>
             </div>
             <div className="group hover:transform hover:scale-105 transition-transform duration-300 cursor-default">
-              <p className="text-3xl font-bold text-ketchup-red drop-shadow-sm group-hover:text-saffron-gold transition-colors">$1.2M+</p>
+              <p className="text-3xl font-bold text-ketchup-red drop-shadow-sm group-hover:text-saffron-gold transition-colors">$1.2M+*</p>
               <p className="text-grill-charcoal font-medium">Avg. Unit Volume</p>
             </div>
             <div className="group hover:transform hover:scale-105 transition-transform duration-300 cursor-default">
-              <p className="text-3xl font-bold text-ketchup-red drop-shadow-sm group-hover:text-saffron-gold transition-colors">18-20%</p>
+              <p className="text-3xl font-bold text-ketchup-red drop-shadow-sm group-hover:text-saffron-gold transition-colors">18-20%*</p>
               <p className="text-grill-charcoal font-medium">Target EBITDA Margin</p>
             </div>
           </div>
